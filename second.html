@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>loggedin</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="wt.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    </head>
+<body>
+    <button id="logout" onclick="logout();" class="btn btn-danger">Logout</button>
+    <center>
+  <h1>WorldTalk</h1>
+  <h2>Explore the world!</h2>
+   <h2 id="user_name" class="result"></h2>
+        <div>
+    <label>Lets go!</label>
+    <input type="text" id="searchroom" class="form-control" placeholder="search"/>
+        
+    </div> <br>
+    <button class="btn btn-primary" onclick="addroom()">Search</button>
+    
+    
+    </center>
+    </body>
+    
+<style>
+    body{
+        background-color: lightblue;
+    }
+    h1{
+       font-family: cursive; 
+    }
+    </style>
+    
+</html>
